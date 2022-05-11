@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Descuento</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Porcentajes y Descuentos
+        </h1>  
+        <p>Este es el segundo taller del Curso Práctico de JavaScript</p>  
+    </header>
+
+    <section>
+        <div class="cardShop">
+            <div class="cardPrice">
+                <img src="/" alt="">
+                <p>Precio</p>
+            </div>
+            <div class="cardForm">
+                <form action="">
+                    <label for="InputPrice">Ingresa el precio de tu producto: </label>
+                    <input id="InputPrice" type="number" />
+                    <label for="InputCupon">Ingresa el cupon de descuento: </label>
+                    <input id="InputCupon" type="text" />
+                    <button type="button" onclick="onClickButtonPriceCupon()">Calcular el precio</button>
+        
+                    <p id="ResultP"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="./retoDescuento.js"></script>
+</body>
+</html>
