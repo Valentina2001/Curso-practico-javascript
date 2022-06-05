@@ -1,0 +1,116 @@
+:root{
+    --night: #132C33;
+    --navy: #126E82;
+    --blue: #51C4D3;
+    --grey: #d9e4e8;
+    --white: #FFFFFF;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url(../img/fondo.jpg);
+    background-size: 100%;
+}
+
+/*First Section*/
+
+.first-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-section .info-calculadora{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    background: rgba(217, 228, 232, .7);
+    padding: 0px 15px;
+}
+
+.info-calculadora h1{
+    color: var(--night);
+    font-size: 24px;
+}
+
+.info-calculadora p{
+    color: var(--night);
+}
+
+.form-calcular{
+    width: 65%;
+    height: 280px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    background: var(--grey);
+    padding: 30px 10px 8px 10px;
+    margin: 20px 0px;
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+    grid-template-columns: 250px 120px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-calcular label{
+    color: var(--night);
+}
+
+.form-calcular input{
+    border: 1px solid var(--navy);
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+input[type=number]{
+    -moz-appearance:textfield;
+}
+
+.form-calcular .button-calcular{
+    width: 120px;
+    height: 34px;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+
+/*Second Section*/
+.second-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-section .resultados{
+    width: 65%;
+    height: 280px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    background: var(--grey);
+    margin: 20px 0px;
+    padding: 30px 20px 20px 20px;
+    overflow-y: scroll;
+    display: none;
+}
+
+.second-section .resultados h2{
+    color: var(--night);
+    font-size: 24px;
+}
+
+.resultados p{
+    color: var(--night);
+    text-align: justify;
+}

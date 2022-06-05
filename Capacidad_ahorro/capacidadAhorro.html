@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Quicksand:wght@300;500;700&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/capacidadAhorro.css">
+    <title>Capacidad de Ahorro</title>
+</head>
+<body>
+    <section class="first-section">
+        <div class="info-calculadora">
+            <h1>Capacidad de Ahorro en un hogar</h1>
+            <p>Con esta calculadora podrá saber cual es tu capacidad de ahorro teniendo en cuenta todos tus ingresos y gastos mensuales. Esta, también determina en cuanto tiempo apróximadamente podrás conseguir cierto ahorro que tengas en mente para largo plazo.</p>
+        </div>
+
+        <form action="" class="form-calcular">
+            <label for="InputIngresos">Cantidad de ingresos por mes apróximadamente:</label>
+            <input id="InputIngresos" type="number">
+            <label for="InputGastos">Cantidad de gastos por mes apróximadamente: </label>
+            <input id="InputGatos" type="number">
+            <label for="InputCashFuture">Cantidad de dinero que desea obtener a largo plazo: </label>
+            <input id="InputCashFuture" type="number">
+            <label for="InputPlazo">Plazo (en Meses) apróximadamente para cumplir la meta anterior: </label>
+            <input id="InputPlazo" type="number">
+
+            
+            <button type="button" class="button-calcular" onclick="calcularRestante()">Calcular Ahorro</button>
+
+        </form>
+    </section>
+    
+    <section class="second-section">
+        <div class="resultados" id="resultados">
+            <h2>Conclusiones Obtenidas</h2>
+            <p class="result" id="result"></p>
+            <p class="result" id="result2"></p>
+            <p class="result" id="result3"></p>
+            <p class="result" id="result4"></p>
+            <!--<p class="result" id="meta"></p>-->
+        </div>
+    </section>
+    
+    <script src="./JS/capacidadAhorro.js"></script>
+</body>
+</html>
